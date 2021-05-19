@@ -7,7 +7,7 @@
 
 
 <?php
-$dsn = "mysql:host=localhost;dbname=crud";
+$dsn = "mysql:host=localhost;dbname=police_kills";
 $username = "root";
 $password = "";
 
@@ -26,7 +26,7 @@ try{
 
 <body>
 <input type="button" value="STATS & FACTS"></input>
-<input type="button" value="MODIFY DATABASE" onclick="location.href='/mymain/modify_menu.php'"></input>
+<input type="button" value="MODIFY DATABASE" onclick="location.href='/police/mymain/modify_menu.php'"></input>
 
 
 <h2 id="myh1">AM I SAFE FROM THE POLICE?</h2> 

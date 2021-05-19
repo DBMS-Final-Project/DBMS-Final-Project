@@ -28,4 +28,4 @@ if(isset($_POST['save']))
 }
 ?>
 <br><br>
-<input type="button" value="OK" onclick="location.href='/myinsert/insert.php'"></input><br><br>
+<input type="button" value="OK" onclick="location.href='/police/myinsert/insert.php'"></input><br><br>

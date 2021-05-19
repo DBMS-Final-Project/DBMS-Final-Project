@@ -9,4 +9,4 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 ?>
 <br><br>
-<input type="button" value="OK" onclick="location.href='/mydelete/delete.php'"></input><br><br>
+<input type="button" value="OK" onclick="location.href='/police/mydelete/delete.php'"></input><br><br>

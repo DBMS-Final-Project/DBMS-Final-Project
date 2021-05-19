@@ -48,6 +48,6 @@
 	</form>
 
 <br><br>
-<input type="button" value="BACK TO MODIFY MENU" onclick="location.href='/mymain/modify_menu.php'"></input><br><br>
+<input type="button" value="BACK TO MODIFY MENU" onclick="location.href='/police/mymain/modify_menu.php'"></input><br><br>
   </body>
 </html>
