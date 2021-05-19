@@ -1,6 +1,6 @@
 <?php
 include_once 'database.php';
-$sql = "DELETE FROM employee WHERE userid='" . $_GET["userid"] . "'";
+$sql = "DELETE FROM policekillingsus WHERE id='" . $_GET["id"] . "'";
 if (mysqli_query($conn, $sql)) {
     echo "Record deleted successfully";
 } else {
