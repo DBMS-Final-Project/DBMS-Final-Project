@@ -2,7 +2,7 @@
 <?php
 include_once 'database.php';
 if(count($_POST)>0) {
-mysqli_query($conn,"UPDATE employee set id='" . $_POST['userid'] . "', name='" . $_POST['name'] . "', date='" . $_POST['date'] . "', manner_of_death='" . $_POST['manner_of_death'] . "' ,armed='" . $_POST['armed'] . "', age='" . $_POST['age'] . "', gender='" . $_POST['gender'] . "', race='" . $_POST['race'] . "', city='" . $_POST['city'] . "', state='" . $_POST['state'] . "', signs_of_mental_illness='" . $_POST['signs_of_mental_illness'] . "', threat_level='" . $_POST['threat_level'] . "', flee='" . $_POST['flee'] . "', body_camera='" . $_POST['body_camera'] . "' WHERE userid='" . $_POST['userid'] . "'");
+mysqli_query($conn,"UPDATE employee set id='" . $_POST['id'] . "', name='" . $_POST['name'] . "', date='" . $_POST['date'] . "', manner_of_death='" . $_POST['manner_of_death'] . "' ,armed='" . $_POST['armed'] . "', age='" . $_POST['age'] . "', gender='" . $_POST['gender'] . "', race='" . $_POST['race'] . "', city='" . $_POST['city'] . "', state='" . $_POST['state'] . "', signs_of_mental_illness='" . $_POST['signs_of_mental_illness'] . "', threat_level='" . $_POST['threat_level'] . "', flee='" . $_POST['flee'] . "', body_camera='" . $_POST['body_camera'] . "' WHERE userid='" . $_POST['userid'] . "'");
 $message = "Record Modified Successfully";
 }
 $result = mysqli_query($conn,"SELECT * FROM policekillingsus WHERE id='" . $_GET['id'] . "'");

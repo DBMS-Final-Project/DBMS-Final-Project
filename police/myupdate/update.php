@@ -1,7 +1,12 @@
 
 <?php
 include_once 'database.php';
-$result = mysqli_query($conn,"SELECT * FROM policekillingsus");
+if(isset($_POST['idnum'])){
+	$result = mysqli_query($conn,"SELECT * FROM policekillingsus WHERE id = '" . $_POST['idnum'] . "'");
+}
+else{
+	$result = mysqli_query($conn,"SELECT * FROM policekillingsus");
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +18,10 @@ $result = mysqli_query($conn,"SELECT * FROM policekillingsus");
 
     <h2 id="myh1">MODIFY: UPDATE</h2><br><br> 
     <h4 id="myh1">Please click the data to be updated</h4><br><br> 
-
+	<form name="frmUser" method="post" action="">
+	<input type="text" name="idnum" placeholder="please search id"/>
+	<input type="submit" name="submit" value="Submit" class="button">
+	</form>
 <?php
 if (mysqli_num_rows($result) > 0) {
 ?>
