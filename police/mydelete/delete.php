@@ -17,6 +17,7 @@ else{
 <body>
 
     <h2 id="myh1">MODIFY: DELETE</h2><br><br> 
+	<input type="button" value="BACK TO MODIFY MENU" onclick="location.href='/police/mymain/modify_menu.php'"></input><br><br>
     <h4 id="myh1">Please click the data to be deleted</h4><br><br> 
 	
 	<form name="frmUser" method="post" action="">
@@ -53,6 +54,5 @@ else{
 </table>
 
 <br><br>
-<input type="button" value="BACK TO MODIFY MENU" onclick="location.href='/police/mymain/modify_menu.php'"></input><br><br>
 </body>
 </html>

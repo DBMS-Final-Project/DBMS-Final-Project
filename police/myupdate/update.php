@@ -17,6 +17,7 @@ else{
 <body>
 
     <h2 id="myh1">MODIFY: UPDATE</h2><br><br> 
+	<input type="button" value="BACK TO MODIFY MENU" onclick="location.href='/police/mymain/modify_menu.php'"></input><br><br>
     <h4 id="myh1">Please click the data to be updated</h4><br><br> 
 	<form name="frmUser" method="post" action="">
 	<input type="text" name="idnum" placeholder="please search id"/>
@@ -77,6 +78,5 @@ else
 ?>
 
 <br><br>
-<input type="button" value="BACK TO MODIFY MENU" onclick="location.href='/police/mymain/modify_menu.php'"></input><br><br>
  </body>
 </html>

@@ -17,7 +17,6 @@ $row= mysqli_fetch_array($result);
 <div><?php if(isset($message)) { echo $message; } ?>
 </div>
 <div style="padding-bottom:5px;">
-<a href="retrieve.php">Employee List</a>
 </div>
 ID: <br>
 <input type="hidden" name="id" class="txtField" value="<?php echo $row['id']; ?>">
@@ -67,6 +66,6 @@ Body camera:<br>
 </form>
 
 <br><br>
-<input type="button" value="OK" onclick="location.href='/police/myupdate/update.php'"></input><br><br>
+<input type="button" value="Back to update menu" onclick="location.href='/police/myupdate/update.php'"></input><br><br>
 </body>
 </html>
